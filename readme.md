@@ -38,7 +38,7 @@ AEDS II | CEFET-MG
  |  `leitura.hpp`                  | Define as funções e as estruturas que foram utilizadas no código                                  |
  |  `leitura.cpp`                  | Contém o escopo de todas as funções que foram utilizadas                                          |
  | `stopwords.txt`                 | arquivo que contem as stop words                                                                  |
- | `arquivo de leitura .txt`       | arquivo de entrada principal no qual será feita toda a análise                                    |
+ | `arquivo de leitura.txt`        | arquivo de entrada principal no qual será feita toda a análise                                    |
 
 # Funções 
  - `readPrincipal()` - [linhas 3 a 103] - função principal em que são lidos os arquivos, definidas as variáveis e chamadas todas as outras funções;
