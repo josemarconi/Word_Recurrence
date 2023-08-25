@@ -104,7 +104,7 @@ AEDS II | CEFET-MG
  ```
 
  ### Make_heap
- A `make_heap()` reorganiza os elementos no intervalo (<i>first<i>, <i>last<i>) de forma que formem uma pilha. A heap é uma forma de organizar os elementos de um intervalo que permite a recuperação rápida do elemento com o valor mais alto a qualquer momento (com pop_heap), mesmo repetidamente, ao mesmo tempo que permite a inserção rápida de novos elementos (com push_heap). No caso da `make_heap()`, o elemento com maior valor é sempre apontado primeiro. A ordem dos outros elementos depende da implementação específica. Os elementos são comparados usando operador <i><<i>, o elemento com o valor mais alto é um elemento para o qual retornaria falso quando comparado a todos os outros elementos do intervalo.
+ A `make_heap()` reorganiza os elementos no intervalo (first, last) de forma que formem uma pilha. A heap é uma forma de organizar os elementos de um intervalo que permite a recuperação rápida do elemento com o valor mais alto a qualquer momento (com pop_heap), mesmo repetidamente, ao mesmo tempo que permite a inserção rápida de novos elementos (com push_heap). No caso da `make_heap()`, o elemento com maior valor é sempre apontado primeiro. A ordem dos outros elementos depende da implementação específica. Os elementos são comparados usando operador "<", o elemento com o valor mais alto é um elemento para o qual retornaria falso quando comparado a todos os outros elementos do intervalo.
 
  Exemplo de implementação básica:
 
