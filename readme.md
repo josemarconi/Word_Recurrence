@@ -38,7 +38,7 @@ AEDS II | CEFET-MG
  |  `leitura.hpp`                  | Define as funções e as estruturas que foram utilizadas no código                                  |
  |  `leitura.cpp`                  | Contém o escopo de todas as funções que foram utilizadas                                          |
  | `stopwords.txt`                 | arquivo que contem as stop words                                                                  |
- | `arquivo de leitura.txt`        | arquivo de entrada principal no qual será feita toda a análise                                    |
+ | `arquivo de leitura .txt`       | arquivo de entrada principal no qual será feita toda a análise                                    |
 
 # Funções 
  - `readPrincipal()` - [linhas 3 a 103] - função principal em que são lidos os arquivos, definidas as variáveis e chamadas todas as outras funções;
@@ -147,6 +147,8 @@ AEDS II | CEFET-MG
     final sorted range : 5 10 15 20 99
  ```
 
+ Sua complexidade é até linear em três vezes a distância(N) entre o primeiro e o último: compara os elementos e potencialmente os troca (ou move) até serem reorganizados como um heap, logo, temos ela como O(3n);
+
  >Como no trabalho foi especificado que não era necessário a ordenação da heap, a função `sort_heap` não chegou a ser utilizada. 
 
  ### Funcionamento da função readPrincipal()
@@ -190,6 +192,22 @@ AEDS II | CEFET-MG
  <p align="center">
  <img src="imagens/Ex.png">
  </p>
+
+<p> </p>
+
+<p> </p>
+
+# Conclusão
+ 
+ O trabalho proposto é de uma implementação que aborda o problema clássico de encontrar os K elementos mais recorrentes em uma coleção de dados de texto. A partir da realização do projeto, foi possível absorver uma compreenssão sólida sobre as estruturas de dados utilizadas, no caso do uso de hash com o `unordered_map` e de heap atráves da ja especificada `make_heap`. É possível afirmar que, utilizando da `make_heap` o programa há de ficar relativamente mais lento em sua compilaçao, levando em consideração o seu custo em comparação a implementação bruta de uma heap citada em literaturas.
+
+ Complexidades:
+
+ |    Estrutura                          |          Complexidade                 |
+ |---------------------------------------|---------------------------------------|
+ |   unordered_map(pesquisa)             |          O(1)                         |
+ |        make_heap()                    |          O(3N)                        |
+ |     heap(literatura)                  |          O(nlog(n))                   |
 
 <p> </p>
 
